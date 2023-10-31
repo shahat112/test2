@@ -14,5 +14,5 @@
 
   - name: "Copy our lending to /var/www/html folder"
     ansible.builtin.copy:
-      scr: "files/html"
+      scr: "/home/ansible/files"
       dest: "/var/www/"
