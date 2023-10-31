@@ -16,3 +16,4 @@
     ansible.builtin.fetch:
       src: "/home/ansible/files"
       dest: "/var/www/"
+      owner: "ansible"
