@@ -12,5 +12,5 @@
       src: "/home/ansible/files/html"
       dest: "/var/www/"
       owner: "ansible"
-      group: "root"
+      group: "ansible"
       mode: "0644"
