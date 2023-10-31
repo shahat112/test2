@@ -1,7 +1,9 @@
 ---
-- name: "Test playbook run"
-  hosts: all
+- hosts: "all"
+  become: true
   tasks:
-    - name: "Debug"
-      ansible.builtin.debug:
-        msg: "Test debug"
+  - name: "Install nginx via apt"
+    ansible.builtin.apt:
+      name: "nginx"
+      state: "latest"
+      update_cache: true
