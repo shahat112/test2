@@ -10,6 +10,4 @@
     copy:
       src: "/home/ansible/files/index.html/"
       dest: "/var/www/"
-      owner: "ansible"
-      group: "ansible"
-      mode: "0644"
+   
