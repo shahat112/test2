@@ -3,11 +3,11 @@
   tasks:
   - name: "Delete /var/www/html folder"
     ansible.builtin.file:
-      path: "/var/www/html"
+      path: "/var/www/html/index.html"
       state: "absent"
 
   - name: "Copy our lending to /var/www/html folder"
     ansible.builtin.copy:
       src: "/home/ansible/files/index.html/"
-      dest: "/var/www/"
+      dest: "/var/www/html/"
    
