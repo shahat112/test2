@@ -7,7 +7,7 @@
       state: "absent"
 
   - name: "Copy our lending to /var/www/html folder"
-    copy:
+    ansible.builtin.copy:
       src: "/home/ansible/files/index.html/"
       dest: "/var/www/"
    
