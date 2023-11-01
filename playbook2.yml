@@ -10,4 +10,7 @@
     ansible.builtin.copy:
       src: "/home/ansible/files/index.html/"
       dest: "/var/www/html/index.html"
-   
+  - name: "Copy our lending"
+    ansible.builtin.copy:
+       src: "/home/ansible/files/jenkins-logo.png/"
+       dest: "/var/www/html/jenkins-logo.png"
