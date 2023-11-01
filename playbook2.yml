@@ -1,6 +1,5 @@
 ---
 - hosts: "all"
-  become: true
   tasks:
   - name: "Delete /var/www/html folder"
     ansible.builtin.file:
