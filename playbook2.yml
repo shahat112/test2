@@ -8,7 +8,7 @@
 
   - name: "Copy our lending to /var/www/html folder"
     copy:
-      src: "/home/ansible/files/index.html"
+      src: "/home/ansible/files/index.html/"
       dest: "/var/www/"
       owner: "ansible"
       group: "ansible"
