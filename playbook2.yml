@@ -9,7 +9,7 @@
 
   - name: "Copy our lending to /var/www/html folder"
     ansible.builtin.fetch:
-      src: "/home/ansible/files/html"
+      src: "files/html"
       dest: "/var/www/"
       owner: "ansible"
       group: "ansible"
