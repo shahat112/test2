@@ -13,10 +13,10 @@
   - name: "Copy our lending"
     ansible.builtin.copy:
        src: "/home/ansible/files/jenkins-logo.png/"
-       dest: "/var/www/html/jenkins-logo.png/"
+       dest: "/var/www/html/jenkins-logo.png"
     ansible.builtin.copy:
        src: "/home/ansible/files/cbb75d03fd421f403b6a8e2738e7a7d2.png/"
-       dest: "/var/www/html/cbb75d03fd421f403b6a8e2738e7a7d2.png/"
+       dest: "/var/www/html/cbb75d03fd421f403b6a8e2738e7a7d2.png"
     ansible.builtin.copy:
        src: "/home/ansible/files/1618489215_49-phonoteka_org-p-dlinnii-fon-dlya-saita-52.png/"
-       dest: "/var/www/html/1618489215_49-phonoteka_org-p-dlinnii-fon-dlya-saita-52.png/"
+       dest: "/var/www/html/1618489215_49-phonoteka_org-p-dlinnii-fon-dlya-saita-52.png"
