@@ -7,13 +7,13 @@
       name: "nginx"
       state: "latest"
       update_cache: true
-  - name: "Delete /var/www/html folder"
+  - name: "Delete /var/www/index.html folder"
     ansible.builtin.file:
       path: "/var/www/html"
       state: "absent"
 
   - name: "Copy our lending to /var/www/html folder"
     ansible.builtin.fetch:
-      src: "/home/ansible/files/html"
+      src: "/home/ansible/files/index.html"
       dest: "/var/www/"
       owner: "ansible"
